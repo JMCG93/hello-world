@@ -20,10 +20,9 @@ iterations = input("How many iterations would you like to perform?  ")
 
 #Define function to remove middle third of a given interval
 def removeMiddleThird(lower, upper):
-    thirdDistance = (upper-lower)/3
+    thirdDistance = (upper-lower)/3.0
     return np.array([lower, lower+thirdDistance, upper-thirdDistance, upper])
 
-#Define function to create Cantor intervals
 def makeCantorInterval(n):
     newInterval = np.array([0.0, 1.0])
     for x in range(n):
